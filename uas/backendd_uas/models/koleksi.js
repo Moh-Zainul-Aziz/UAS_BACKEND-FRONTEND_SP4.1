@@ -18,7 +18,7 @@ module.exports = {
     },
     getKoleksiByNim:(nim,result) =>{
         try {
-            sql.query(`SELECT jenis.kdVk, jenis.tipe,koleksi.dokter,koleksi.dosis,koleksi.kondisi 
+            sql.query(`SELECT jenis.kdVk, jenis.tipe, vaksin.tglvaksin, vaksin.tmptvaksin, koleksi.dokter,koleksi.dosis,koleksi.kondisi 
             FROM vaksin,jenis,koleksi
             WHERE vaksin.nim=${nim} and koleksi.nim=${nim} and koleksi.kdVk=jenis.kdVk`,(err,res) =>
             {

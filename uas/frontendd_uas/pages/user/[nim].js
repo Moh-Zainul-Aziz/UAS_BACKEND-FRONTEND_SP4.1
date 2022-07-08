@@ -1,17 +1,17 @@
 import { useRouter } from "next/router"
 const nim = () =>{
-    const data_vaksin =[ 
-        {nim : '11103201', nilai : 'A'},
-        {nim : '11103202', nilai : 'AB'},
-        {nim : '11103203', nilai : 'B'}
+    const data_keterangan =[ 
+        {nim : '11103201', keterangan : 'Sudah Vaksin'},
+        {nim : '11103202', keterangan : 'Belum Vaksin'},
+        {nim : '11103203', keterangan : 'Sudah Vaksin Dosis 1 & 2'}
       ];
     const router = useRouter();
     const {nim} = router.query;
-    const data = data_vaksin.find(m => m.nim == nim)
+    const data = data_keterangan.find(m => m.nim == nim)
     return(
         <>
         <p>nim : {nim}</p>
-        <p>Nilai : {data.nilai}</p>
+        <p>Keterangan : {data.keterangan}</p>
         </>
     )
 }

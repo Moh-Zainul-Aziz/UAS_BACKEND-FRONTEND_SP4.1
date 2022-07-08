@@ -26,7 +26,7 @@ export default function Home() {
               {Vks.nim}
               </Link>
               <p>{Vks.nama}</p>
-              <button className="btn- btn-primary" onClick={(e) =>sendParamRouter(Vks.nim)}>Cek Nilai</button>
+              <button className="btn- btn-danger" onClick={(e) =>sendParamRouter(Vks.nim)}>Cek Data</button>
             </li>
             </>
           ))}

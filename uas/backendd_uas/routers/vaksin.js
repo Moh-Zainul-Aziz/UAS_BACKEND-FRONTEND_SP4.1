@@ -13,8 +13,8 @@ routerVaksin.route('/vaksin/:nim')
     .delete(controllerVaksin.delete)
     .get(controllerVaksin.getVaksinByNim)
 
-routerVaksin.route('/koleksi')
-    .get(controllerKoleksi.getKoleksi)
+// routerVaksin.route('/koleksi')
+//     .get(controllerKoleksi.getKoleksi)
     
 routerVaksin.route('/koleksi/:nim')
     .get(controllerKoleksi.getKoleksiByNim)

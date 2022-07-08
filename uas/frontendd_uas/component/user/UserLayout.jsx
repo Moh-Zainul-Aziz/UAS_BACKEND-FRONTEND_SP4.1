@@ -4,7 +4,7 @@ const UserLayout = ({children})=>{
         <>
         <Nav/>
         {children}
-        <div className="footer fixed-bottom bg-dark">
+        <div className="footer fixed-bottom bg-danger">
             <h3 className="text-light text-center">Footer</h3>
         </div>
         </>
